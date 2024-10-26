@@ -14,7 +14,7 @@ const Layout = (props: any) => {
         (
             async () => {
                 try {
-                    const {data} = await axios.get('http://34.172.125.16/user/api/ambassador/user');
+                    const {data} = await axios.get('http://34.172.125.16/user/api/ambassador/users');
 
                     props.setUser(data);
                 } catch (e) {
